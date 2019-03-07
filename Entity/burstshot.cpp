@@ -3,6 +3,7 @@
 #include "enemyentity.h"
 #include <QtMath>
 
+
 BurstShot::BurstShot(GameState *game, int x, int y, float angle,
                      polarType polarity): ShotEntity(game,x,y,polarity)
 {

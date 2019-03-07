@@ -17,8 +17,7 @@ enum polarType{WHITE, BLACK};
 enum entityType{PLAYER, SHOT, BURST, ENEMY, ENEMYSHOT, ENEMYBEAM, EFFECT, SHIP};
 
 #include <GameState/gamestate.h>
-
-#include <Container/simplevector.h>
+//#include <Container/simplevector.h>
 class GameState;
 class Entity
 {
@@ -84,7 +83,7 @@ protected:
     polarType polarity;
     entityType type;
 
-    Vector<s_ptr> frames;
+    QVector<s_ptr> frames;
     double lastFrameChange;
     int currentFrame;
 

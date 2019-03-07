@@ -1,6 +1,8 @@
 #include "gamestate.h"
+#include "GameState/gamestatemanager.h"
 #include "Util/timer.h"
 #include "Entity/bulletshield.h"
+#include "Entity/entity.h"
 
 GameState::GameState(GameStateManager *gsm)
 {
@@ -47,12 +49,12 @@ GameState::~GameState(){
 
 int GameState::height() const
 {
-    return gsm->getWidget()->height();
+    return gsm->height();
 }
 
 int GameState::width() const
 {
-    return gsm->getWidget()->width();
+    return gsm->width();
 }
 
 QHash<QString, bool> GameState::getKeys() const

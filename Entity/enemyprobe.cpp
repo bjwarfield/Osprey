@@ -1,4 +1,5 @@
 #include "enemyprobe.h"
+#include "GameState/gamestate.h"
 
 EnemyProbe::EnemyProbe(GameState *game, int x, int y, polarType polarity, Path *path, QString ref):
     EnemyEntity(game, x, y, polarity, path, ":/sprites/enemy/probe.png" )

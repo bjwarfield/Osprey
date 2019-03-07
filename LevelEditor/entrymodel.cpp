@@ -163,7 +163,8 @@ void EntryModel::reset()
 void EntryModel::sort()
 {
     beginResetModel();
-    entryList.sort();
+//    entryList.sort();
+    qSort(entryList.begin(), entryList.end());
     emit entryPath(NULL);
     endResetModel();
 }
@@ -202,7 +203,7 @@ void EntryModel::read(const QJsonObject &json)
 
 void EntryModel::write(QJsonObject &json) const
 {
-    DList<EnemyEntry>::const_iterator itr;
+    QList<EnemyEntry>::const_iterator itr;
 
     QJsonArray enemyList;
     for (itr = entryList.cbegin(); itr != entryList.cend(); itr++){

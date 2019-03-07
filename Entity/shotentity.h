@@ -12,7 +12,7 @@ protected:
    int shotSpeed;
    bool hit;
    int dmg;
-   Vector<s_ptr> fragFrames;
+   QVector<s_ptr> fragFrames;
    int currentFrag;
 
 public:

@@ -27,7 +27,7 @@ private:
     float targetDistance;
     float angleDistance;
     float rotatesSpeed;
-    Vector<Point> trail;
+    QVector<Point> trail;
 
 //    float getDistance(Point a, Point b);
     void steerShot(double delta);

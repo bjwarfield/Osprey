@@ -1,11 +1,13 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
 
-#include "GameState/gamestatemanager.h"
-#include "Entity/entity.h"
+//#include "GameState/gamestatemanager.h"
+#include "Container/DoubleLinkedList.h"
+#include <QList>
 
 class GameStateManager;
-
+class Entity;
+typedef  QSharedPointer<Entity> e_ptr;
 
 class GameState
 {
