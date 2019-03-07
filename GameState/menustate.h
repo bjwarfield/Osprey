@@ -28,7 +28,7 @@ private:
     levelEditor *le;
     int currentChoice;
 
-    Vector<QString> option;
+    QVector<QString> option;
     Sprite logo;
 
     Font grayFont;

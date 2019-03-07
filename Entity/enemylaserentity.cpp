@@ -1,5 +1,6 @@
 #include "enemylaserentity.h"
 
+
 EnemyLaserEntity::EnemyLaserEntity(GameState *game, int x, int y, polarType polarity):
     EnemyShotEntity(game, x,y,polarity)
 {

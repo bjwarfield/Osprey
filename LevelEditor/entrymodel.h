@@ -3,6 +3,7 @@
 #include <QtCore>
 #include "TileMap/entitymap.h"
 #include <QAbstractTableModel>
+#include <QtAlgorithms>
 
 class EntryModel:public QAbstractTableModel
 {
@@ -31,7 +32,7 @@ public:
     void            write(QJsonObject &json)const;
 
 private:
-    DList<EnemyEntry> entryList;
+    QList<EnemyEntry> entryList;
     EnemyEntry      newEntry();
 
 signals:

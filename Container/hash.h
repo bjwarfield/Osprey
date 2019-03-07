@@ -189,7 +189,7 @@ template<class T>
 int Hash<T>::getHash(QString key)
 {
     std::string keyString = key.toLocal8Bit().constData();
-    int hashedIndex;
+    unsigned int hashedIndex;
 
     switch(currentHashType){
         case RS:

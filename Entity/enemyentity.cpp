@@ -3,7 +3,6 @@
 #include "Entity/shotentity.h"
 #include "Util/timer.h"
 
-
 EnemyEntity::EnemyEntity(GameState *game, int x, int y, polarType polarity, Path *path, QString ref):
     Entity(game, x,y,ref)
 {

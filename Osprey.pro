@@ -13,13 +13,13 @@ include(TileMap/tilemap.pri)
 include(Users/users.pri)
 include(Util/util.pri)
 
-QT       += core gui
+QT      += core gui
 QT      += sql
 CONFIG  += c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = OspreyV2
+TARGET = Osprey
 TEMPLATE = app
 
 

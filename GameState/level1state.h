@@ -2,7 +2,7 @@
 #define LEVEL1STATE_H
 
 #include "GameState/gamestate.h"
-
+#include "Container/simplevector.h"
 #include <TileMap/entitymap.h>
 #include <TileMap/tilemap.h>
 
@@ -14,7 +14,7 @@ private:
     QSharedPointer<EntityMap> entityMap;
 
     double timeStart;
-    Vector<bool> events;
+    QVector<bool> events;
     bool levelEnd;
     double eventTimer;
     int playerEnergy;

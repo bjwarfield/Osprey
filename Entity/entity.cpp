@@ -1,6 +1,6 @@
 
+#include "GameState/gamestate.h"
 #include "entity.h"
-
 
 Entity::Entity(GameState *game, int x, int y, QString ref):
     game(game), pos(x,y), removeThis(false)
