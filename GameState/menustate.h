@@ -23,7 +23,7 @@ public:
 
 private:
     QSharedPointer<Background> bg;
-    UserControlPanel *ucp;
+//    UserControlPanel *ucp;
 
     levelEditor *le;
     int currentChoice;

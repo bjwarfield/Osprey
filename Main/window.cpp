@@ -6,7 +6,7 @@
 
 Window::Window()
 {
-    setWindowTitle("Osprey Assault V2");
+    setWindowTitle("Osprey Assault");
 
     QGridLayout *layout =  new QGridLayout;
 

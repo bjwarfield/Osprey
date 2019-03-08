@@ -11,17 +11,16 @@ MenuState::MenuState(GameStateManager *gsm):
 
     currentChoice = 0;
 
-    option.resize(4);
+    option.resize(3);
     option[0] = "Start";
-    option[1] = "User Control Panel";
-    option[2] = "Level Editor";
-    option[3] = "Quit";
+    option[1] = "Level Editor";
+    option[2] = "Quit";
 
-    bg = QSharedPointer<Background>(new Background(":/backgrounds/clouds_01.png", 1.2));
+    bg = QSharedPointer<Background>(new Background(":/backgrounds/clouds_01.png", 1.2f));
     bg->setMovement(-120,50);
 
-    le = NULL;
-    ucp = NULL;
+    le = nullptr;
+//    ucp = NULL;
     init();
 
 }
@@ -109,20 +108,13 @@ void MenuState::select()
         gsm->setState(GameStateManager::LEVEL1STATE);
         break;
     case 1:
-        //User Control Panel
-        if(!ucp){
-            ucp = new UserControlPanel(gsm->getWidget());
-        }
-        ucp->show();
-        break;
-    case 2:
         //level editor
         if(!le){
             le = new levelEditor(gsm->getWidget());
         }
         le->show();
         break;
-    case 3:
+    case 2:
         //close app
         gsm->getWidget()->endGame();
         QTimer::singleShot(250,qApp,SLOT(quit()));
